@@ -17,7 +17,7 @@ class MyIntentService : IntentService("MyIntentService") {
     override fun onHandleIntent(intent: Intent?) {
         when (intent?.action) {
             ACTION_FOO -> {
-                val param1 = intent.getStringExtra(EXTRA_PARAM1)
+                val param1 = intent.getStringExtra(EXTRA_PARAM1) ?: "DEAFULT"
                 handleMessage(param1)
             }
         }
