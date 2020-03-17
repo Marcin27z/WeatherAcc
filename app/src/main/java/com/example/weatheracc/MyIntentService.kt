@@ -23,10 +23,6 @@ class MyIntentService : IntentService("MyIntentService") {
         }
     }
 
-    /**
-     * Handle action Foo in the provided background thread with the provided
-     * parameters.
-     */
     private fun handleMessage(message: String) {
         val intent = Intent().apply {
             action = "SEND_MESSAGE"
