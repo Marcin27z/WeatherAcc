@@ -33,7 +33,7 @@ class ForecastListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         addLocationButton.setOnClickListener {
-            findNavController().navigate(ForecastListFragmentDirections.actionForecastListFragmentToSearchFragment())
+            findNavController().navigate(ForecastListFragmentDirections.actionForecastListFragmentToSavedCitiesFragment())
         }
     }
 

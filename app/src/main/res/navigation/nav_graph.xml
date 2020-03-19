@@ -24,10 +24,27 @@
         <action
             android:id="@+id/action_forecastListFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_forecastListFragment_to_savedCitiesFragment"
+            app:destination="@id/savedCitiesFragment" />
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.example.weatheracc.ui.fragment.SearchFragment"
         android:label="search_fragment"
         tools:layout="@layout/search_fragment" />
+    <fragment
+        android:id="@+id/savedCitiesFragment"
+        android:name="com.example.weatheracc.ui.fragment.SavedCitiesFragment"
+        android:label="saved_cities_fragment"
+        tools:layout="@layout/saved_cities_fragment" >
+        <action
+            android:id="@+id/action_savedCitiesFragment_to_searchCityFragment"
+            app:destination="@id/searchCityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchCityFragment"
+        android:name="com.example.weatheracc.ui.fragment.SearchCityFragment"
+        android:label="search_city_fragment"
+        tools:layout="@layout/search_city_fragment" />
 </navigation>
